@@ -1,0 +1,29 @@
+View the complete list of classifiers you may choose from.
+
+See the meta-data docs for details about how to include them in your setup.py file.
+
+PyPI will attempt to parse the "long_description" from your meta-data as reStructuredText. If this fails, it will be presented to users as plain text (all whitespace and formatting retained).
+
+Missing Classifier?
+
+Is a classifier you need missing from the classifiers list?
+
+Python frameworks with plugins or packages that target the framework can get their own category. The category should only be added after such packages exist.
+
+Complementary packages can link to each other from their descriptions, they do not need a category to link them together; only when packages are provided by different people does a category need to be created.
+
+To ask for a category email catalog-sig@python.org .
+
+Package Distribution Files
+
+Note that submitting a package distribution file automatically submits the package's meta-data. You may submit package distribution files either by:
+
+appending the "upload" command to a setup.py source dist or built dist command, eg "python setup.py sdist upload", or
+logging into the Package Index and using the package management interface to manually upload files.
+The "upload" command has a number of options, including being able to sign the upload using GPG. See "python setup.py upload --help" for more information.
+
+Exposing Multiple Releases
+
+When a new release of a package is submitted to the Package Index, all previous releases of that package are hidden from the display. This means that listings and searches will no longer find those releases.
+
+You may use the package admin interface to un-hide releases. This may be useful if you have both a stable and a development release active at the same time. These will be hidden again on the next submission of meta-data.
